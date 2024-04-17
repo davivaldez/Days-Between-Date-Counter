@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>Contador de Dias entre Datas</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Contador de Dias entre Datas</h1>
+    </header>
+    <main>
+      <h2>Escolha o seu intervalo de datas</h2>
+      <section class="date-container">
+        <section class="date-start-container">
+          <p>Data de início</p>
+          <input type="date" name="date-start" id="date-start">
+        </section>
+        
+        <section class="date-final-container">
+          <p>Data final</p>
+          <input type="date" name="date-final" id="date-final">
+        </section>
+      </section>
+
+      <section class="date-result">
+        <button id="btn-date" onclick="daysToNextDate()">Calcular</button>
+        <input type="text" name="date-result" id="date-result" disabled>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Todos os direitos reservados. Desenvolvido por <a target="_blank" href="https://github.com/davivaldez">@davivaldez</a></p>
+    </footer>
+  </div>
+
+  <script src="./js/countDays.js" defer></script>
+</body>
+</html>
