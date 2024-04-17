@@ -13,11 +13,11 @@ const baseDirectory = path.join(__dirname, "../frontend/public");
 app.use("/css", express.static(path.join(baseDirectory, "css")));
 app.use("/js", express.static(path.join(baseDirectory, "js")));
 
-app.get("/", (req, res) => {
+app.get("https://days-between-date-counter-davivaldez.onrender.com/", (req, res) => {
   res.sendFile(path.join(baseDirectory, "index.html"));
 })
 
-app.post("/date", (req, res) => {
+app.post("https://days-between-date-counter-davivaldez.onrender.com/date", (req, res) => {
   const dateStartBody = req.body.dateStartBody;
   const dateFinalBody = req.body.dateFinalBody;
 

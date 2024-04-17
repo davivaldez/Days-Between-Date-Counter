@@ -13,7 +13,7 @@ function daysToNextDate() {
     return alert("Por favor, preencha todos os campos para ver a diferença de dias.");
   }
 
-   fetch("http://localhost:3000/date", {
+   fetch("https://days-between-date-counter-davivaldez.onrender.com/date", {
      method: "POST",
      headers: {
      'Accept': 'application/json',
